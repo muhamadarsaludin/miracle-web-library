@@ -1,0 +1,18 @@
+<div
+  class="miracle-badge"
+  :class="badgeClasses">
+  <div
+    v-if="slots['leading-icon']"
+    class="miracle-badge__leading-icon">
+    <slot name="leading-icon"></slot>
+  </div>
+  <span><slot/></span>
+  <div
+    v-if="slots['trailing-icon']"
+    class="miracle-badge__trailing-icon">
+    <slot name="trailing-icon"></slot>
+  </div>
+  <span class="material-symbols-rounded miracle-badge__close-icon">
+    close
+  </span>
+</div>

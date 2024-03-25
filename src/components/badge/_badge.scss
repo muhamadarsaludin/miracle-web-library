@@ -1,0 +1,16 @@
+.miracle-badge {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 2px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #262626;
+  color: #ffffff;
+
+  &__leading-icon,
+  &__trailing-icon,
+  &__close_icon {
+    font-size: 16px;
+  }
+}
